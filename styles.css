@@ -1,0 +1,24 @@
+h1{
+margin: 2em;
+border-bottom: 2em;
+border-color: black;
+border-top: 2em;
+padding: 2em;
+background-image:url(/variety.jpg);
+background-color: transparent;
+}
+p, ul{border: 2px;border: blue ;padding: .5em;}
+ul{font-display:initial;
+    nav-down: auto;
+    font-stretch: expanded;
+    text-align-last: auto;
+    direction: ltr;
+    flex-direction: initial;
+    display:grid;
+}
+li{
+    font-size: 30;
+}
+.main-menu{display: inline;border-color: solid blue;
+block-size: auto;}
+
