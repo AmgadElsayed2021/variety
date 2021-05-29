@@ -1,0 +1,104 @@
+body{background-color: aqua;}
+.topBox ul{list-style:none;}
+.topBox{width: 1400px;
+    height: 40px;
+    font-family: sans-serif;
+    padding-left: 40px;
+    padding-right: 40px;
+   
+}
+#logo{
+    padding-left: 40px;
+   
+}
+.topBox li{
+    display:grid;
+	width: 222px;
+	grid-row:auto;
+    float: left;
+    grid-column:auto;
+	margin-left:auto;
+	border:1px solid #000;
+}
+header{
+    text-align: left;
+    display: block;
+    flex-wrap:wrap;
+}
+
+.topBox a{
+    display:grid;
+    padding: 3px;
+    text-decoration: none;
+    background-color: rgb(199, 18, 18);
+    color: blue;
+}
+.topBox a:hover{
+    background-color: azure;
+    color: greenyellow;
+    
+}
+@import url(https://googleapis.com/css?family=open+sans);
+.Search{
+    position:static;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    display: flexbox;
+
+}
+.wrap{display: block;
+align-self: center;
+padding-left: 600px;
+flex-flow: nowrap;
+}
+#rightside ul{list-style:none;
+}
+#rightside{width: 1400px;
+ 
+    padding-left: 40px;
+    height: 1000px;
+    font-family: sans-serif;
+
+}
+#rightside li{
+    display:grid;
+	width: 333px;
+    Height: 340px;
+	grid-row:auto;
+    float: left;
+    grid-column:auto;
+	margin-left:auto;
+	border:1px solid #000;   
+
+}
+#rightside a{
+    display:grid;
+    padding: 3px;
+    text-decoration: none;
+    background-color: rgb(199, 18, 18);
+    color: blue;
+}
+#rightside a:hover{
+    background-color: azure;
+    color: greenyellow;
+    
+}
+header{
+
+    grid-row:auto;
+}
+
+#address{
+    font-size: large;
+    grid-row:auto;
+    padding-left: 70px;
+    float: left;
+    color: blue;
+}
+#addressDtls{
+    color: crimson;
+    float: left;
+    grid-row: auto;
+    padding-top: 40px;
+}
