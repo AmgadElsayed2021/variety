@@ -1,0 +1,212 @@
+* {
+    box-sizing: border-box;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* Style the top navigation bar */
+  .topbox {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  /* Style the topnav links */
+  .topbox a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change color on hover */
+  .topbox a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* On screens that are 600px wide or less, make the menu links stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .topbox a {
+      float: none;
+      width: 100%;
+    }
+  }  
+  .row::after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+  
+  [class*="col-"] {
+    float: left;
+    padding: 15px;
+  }
+  
+  html {
+    font-family: "Lucida Sans", sans-serif;
+  }
+  
+  .header {
+    background-color: #9933cc;
+    color: #ffffff;
+    padding: 15px;
+    padding-left: 30px;;
+  }
+  
+  .menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu li {
+    padding: 8px;
+    margin-bottom: 7px;
+    background-color: #33b5e5;
+    color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  }
+  
+  .menu li:hover {
+    background-color: #0099cc;
+  }
+  
+  .aside {
+    background-color: #33b5e5;
+    padding: 15px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 14px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  }
+  
+  
+  
+  
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+  
+  
+  @media only screen and (max-width: 600px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+      width: 100%;
+    }
+  }
+
+body{background-color: aqua;
+}
+.topBox ul{list-style:none;}
+#logo{
+    padding-left: 40px;
+
+}
+    #bath{
+        background-image: url(bath.jpg);height:100%; width:100%;}
+    #Hair{
+        background-image: url(hair.jpg);height: 340px; width:333px;}
+    #jewelry{
+       background-image: url(jewelry.jpg);height:100%; width:100%;}
+    #handmade{
+        background-image: url(handmade.jpg);height:100%; width:100%;}
+    #homedeco{
+        background-image: url(Home.jpg);height: 3px; width:333px;}
+    #watches{
+        background-image: url(watches.jpg);height:100%; width:100%;}
+    #car{
+        background-image: url(car.jpg);height: 340px; width:333px;}
+     #rings{
+        background-image: url(rings.jfif);height:100%; width:100%;}
+    #bags{
+        background-image: url(bags.jpg);height:100%; width:100%;}
+    #perfumes{
+        background-image: url(perfumes.jfif);height:100%; width:100%;}
+    #skin{
+        background-image: url(skin.jpg);height:100%; width:100%;}
+    #makeup{
+        background-image: url(makeup.jpg);height:100%; width:100%;}
+
+
+
+
+@import url(https://googleapis.com/css?family=open+sans);
+.Search{
+    position:static;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    display: flexbox;
+
+}
+.wrap{display: block;
+align-self: center;
+padding-left: 600px;
+flex-flow: nowrap;
+}
+#sections ul{list-style:none;
+}
+#sections{width: 1400px;
+ 
+    padding-left: 40px;
+    height: 1000px;
+    font-family: sans-serif;
+
+}
+@media only screen and(max-width:600px){
+    #sections li{width:25%}
+}
+#sections li{
+    display:grid;
+	width: 25%;
+    Height: 340px;
+	grid-row:auto;
+    float: left;
+    grid-column:auto;
+	margin-left:auto;
+	border:1px solid #000;   
+
+}
+#sections a{
+    display:grid;
+    padding: 3px;
+    text-decoration: none;
+   position: relative;
+    color: blue;
+}
+#sections a:hover{
+    background-color: azure;
+    color: greenyellow;
+    
+}
+header{
+
+    grid-row:auto;
+}
+
+#address{
+    font-size: large;
+    grid-row:auto;
+    padding-left: 70px;
+    float: left;
+    color: blue;
+}
+#addressDtls{
+    color: crimson;
+    float: left;
+    grid-row: auto;
+    padding-top: 40px;
+}
