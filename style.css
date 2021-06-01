@@ -37,9 +37,13 @@
   .row::after {
     content: "";
     clear: both;
-    display: block;
+    display: grid;
   }
-  
+  .sections::after {
+    content: "";
+    clear: both;
+    display: grid;
+  }
   [class*="col-"] {
     float: left;
     padding: 15px;
@@ -50,6 +54,12 @@
   }
   
   .header {
+    background-color: #9933cc;
+    color: #ffffff;
+    padding: 15px;
+    padding-left: 30px;;
+  }
+  .categories {
     background-color: #9933cc;
     color: #ffffff;
     padding: 15px;
@@ -68,6 +78,39 @@
     background-color: #33b5e5;
     color: #ffffff;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  }
+  .left li {
+    display:grid;
+	width: 100%;
+    Height: 340px;
+	grid-row:auto;
+    float: left;
+    grid-column:auto;
+	margin-left:auto;
+	border:1px solid #000;   
+
+  }
+  .middle li {
+    display:grid;
+	width: 100%;
+    Height: 340px;
+	grid-row:auto;
+    float: left;
+    grid-column:auto;
+	margin-left:auto;
+	border:1px solid #000;   
+
+  }
+  .right li {
+    display:grid;
+	width: 100%;
+    Height: 340px;
+	grid-row:auto;
+    float: left;
+    grid-column:auto;
+	margin-left:auto;
+	border:1px solid #000;   
+
   }
   
   .menu li:hover {
@@ -120,11 +163,11 @@ body{background-color: aqua;
     #Hair{
         background-image: url(hair.jpg);height: 340px; width:333px;}
     #jewelry{
-       background-image: url(jewelry.jpg);height:100%; width:100%;}
+        background-image: url(jewelry.jpg);height:100%; width:100%;}
     #handmade{
-        background-image: url(handmade.jpg);height:100%; width:100%;}
+        background-image: url(handmade.jpg); height:30px; width:20px;}
     #homedeco{
-        background-image: url(Home.jpg);height: 3px; width:333px;}
+        background-image: url(homedecor.jfif); height:315px; width:100%;}
     #watches{
         background-image: url(watches.jpg);height:100%; width:100%;}
     #car{
@@ -157,37 +200,27 @@ align-self: center;
 padding-left: 600px;
 flex-flow: nowrap;
 }
-#sections ul{list-style:none;
+.sections ul{list-style:none;
 }
-#sections{width: 1400px;
- 
+.sections{
+    display: grid;
     padding-left: 40px;
-    height: 1000px;
+    height: 1400px;
     font-family: sans-serif;
 
 }
 @media only screen and(max-width:600px){
-    #sections li{width:25%}
+    .sections li{width:25%}
 }
-#sections li{
-    display:grid;
-	width: 25%;
-    Height: 340px;
-	grid-row:auto;
-    float: left;
-    grid-column:auto;
-	margin-left:auto;
-	border:1px solid #000;   
-
-}
-#sections a{
+  
+.sections a{
     display:grid;
     padding: 3px;
     text-decoration: none;
    position: relative;
     color: blue;
 }
-#sections a:hover{
+.sections a:hover{
     background-color: azure;
     color: greenyellow;
     
